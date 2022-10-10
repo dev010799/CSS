@@ -1,0 +1,49 @@
+.fcontainer {
+  display: flex;
+  border: 2px solid grey;
+  height: 45vh;
+  /* display: block; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column-reverse; */
+  /* justify-content: flex-end; */
+  /* justify-content: flex-start; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-around; */
+  /* flex-wrap: wrap; */
+  /* flex-flow: column wrap; */
+}
+
+/* Highly in flexbox we use mostly are the following properties as follows:
+
+1. diplay : flex;
+2. align-items : center;
+3. text-align : center;
+4. align-self : center.
+
+this 4 properties are used 70% in flexbox container.
+*/
+.fitem {
+  background-color: red;
+  border: 2px solid black;
+  margin: 12px;
+  width: 122px;
+  height: 122px;
+}
+
+.item1 {
+  order: 3;
+  /* the bigger order is comes in end (i.e 2341,1 has the highesh order) */
+  /* flex-grow: 3; */
+  flex-shrink: 2;
+  align-self: center;
+}
+
+.item4 {
+  order: 4;
+  /* the bigger order is comes in end (i.e 2341,4 has the highesh order) */
+  /* flex-grow: 2; */
+  flex-shrink: 3;
+}

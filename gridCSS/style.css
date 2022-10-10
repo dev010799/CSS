@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: red;
+  /* height: 1400px;
+  width: 900px; */
+
+  /* If we use only display:grid this will be treated as Block element */
+
+  display: grid;
+  /* display:-ms-inline-grid */
+
+  /* if we use inline-grid is treated like inline element in CSS  */
+
+  height: 700px;
+  /* grid-template-rows: 133px 133px 133px;
+  grid-template-columns: 133px 133px 133px; */
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 143px 1fr 43px;
+  row-gap: 12px;
+  column-gap: 12px;
+  /* align-items: center; */
+  place-items: center;
+
+  /* Place-items property are used 90% in css */
+}
+
+.item {
+  background-color: aqua;
+  height: 122px;
+  width: 122px;
+  /* color: white; */
+  /* width: 100vw; */
+}
+
+.item1 {
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+
+  /* instead of grid column start and grid column end we can use 
+  grid column : 1 / span3 */
+
+  grid-column: 1 / span 3;
+
+  /* grid-row-start: 1;
+  grid-row-end: 3;*/
+
+  background-color: black;
+  color: white;
+  width: 100vw;
+}
+
+.item2 {
+  /* justify-items: ends; */
+  /* justify-self: center;
+  align-self: center; */
+  /* place-self: center; */
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: black;
+  width: 100vw;
+}
